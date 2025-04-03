@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyBank Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">EasyBank</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accounts</a></li>
+                <li><a href="transfer.html">Transfer Funds</a></li>
+                <li><a href="bill-pay.html">Pay Bills</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+        <div class="user-info">
+            <span>Welcome, User Name</span>
+            <a href="#">Logout</a> </div>
+    </header>
+
+    <main class="container">
+        <h1>Account Summary</h1>
+
+        <section class="account-summary">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Account Name</th>
+                        <th>Account Number</th>
+                        <th>Available Balance</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Everyday Checking</td>
+                        <td>...XXXX</td>
+                        <td class="balance">$5,250.75</td>
+                        <td><a href="history.html?account=XXXX">View History</a></td>
+                    </tr>
+                    <tr>
+                        <td>Super Savings</td>
+                        <td>...YYYY</td>
+                        <td class="balance">$12,810.15</td>
+                        <td><a href="history.html?account=YYYY">View History</a></td>
+                    </tr>
+                     <tr>
+                        <td>Business Plus</td>
+                        <td>...ZZZZ</td>
+                        <td class="balance">$25,100.00</td>
+                        <td><a href="history.html?account=ZZZZ">View History</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            </section>
+
+        <section class="quick-actions">
+            <h2>Quick Actions</h2>
+            <a href="transfer.html" class="button">Transfer Funds</a>
+            <a href="bill-pay.html" class="button">Pay a Bill</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="support.html">Contact Us</a> |
+        <a href="support.html">Help</a>
+        <p>&copy; 2025 EasyBank</p>
+    </footer>
+</body>
+</html>

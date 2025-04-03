@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History - EasyBank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">EasyBank</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accounts</a></li>
+                <li><a href="transfer.html">Transfer Funds</a></li>
+                <li><a href="bill-pay.html">Pay Bills</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+        <div class="user-info">
+            <span>Welcome, User Name</span>
+            <a href="#">Logout</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Transaction History for Everyday Checking (...XXXX)</h1>
+
+        <section class="history-controls form-section">
+            <div style="display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap;">
+                 <input type="text" placeholder="Search Description..." style="flex-grow: 1; min-width: 150px;">
+                 <input type="date" title="Start Date">
+                 <input type="date" title="End Date">
+                 <button type="button" class="button" style="padding: 10px 15px;">Search</button>
+                 <button type="button" class="button button-secondary" style="padding: 10px 15px;">Download Statement</button>
+            </div>
+        </section>
+
+        <section class="transaction-history">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2025-04-01</td>
+                        <td>Grocery Store Purchase</td>
+                        <td class="amount-debit">-$75.50</td>
+                        <td>$5,250.75</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-30</td>
+                        <td>Paycheck Deposit</td>
+                        <td class="amount-credit">+$2,100.00</td>
+                        <td>$5,326.25</td>
+                    </tr>
+                    <tr>
+                        <td>2025-03-28</td>
+                        <td>Utility Bill Payment</td>
+                        <td class="amount-debit">-$120.00</td>
+                        <td>$3,226.25</td>
+                    </tr>
+                     <tr>
+                        <td>2025-03-25</td>
+                        <td>Transfer to Savings</td>
+                        <td class="amount-debit">-$500.00</td>
+                        <td>$3,346.25</td>
+                    </tr>
+                    </tbody>
+            </table>
+             <div style="text-align: center; margin-top: 20px;">
+                <a href="#" class="button button-secondary">&lt;&lt; Prev</a>
+                <span style="margin: 0 15px;">Page 1 of 5</span>
+                <a href="#" class="button button-secondary">Next &gt;&gt;</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="support.html">Contact Us</a> |
+        <a href="support.html">Help</a>
+        <p>&copy; 2025 EasyBank</p>
+    </footer>
+</body>
+</html>
